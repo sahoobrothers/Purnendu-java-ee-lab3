@@ -1,0 +1,95 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: pink;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: lightblue;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>  
+</head>  
+	<body>  
+		<form action="student">
+  			<div class="container">  
+  				<center><h1> Student Registeration Form</h1></center>  
+  				<hr>  
+  				<label> <b>Name </b></label>   
+						<input type="text" name="name" placeholder= "Name" size="15" required />   
+				<label> <b>Registration No </b></label>   
+						<input type="text" name="RegdNo" placeholder="Regestration No" size="15" required /> 
+			 
+				<label><b>Gender :</b></label><br>  
+				<input type="radio" value="Male" name="gender" checked > Male   
+				<input type="radio" value="Female" name="gender"> Female   
+				<input type="radio" value="Other" name="gender"> Other
+			<br><br>
+				<label><b>Semester</b></label>
+				<select name="sem">  
+					<option value="1st">1st</option>  
+					<option value="2nd">2nd</option>  
+					<option value="3rd">3rd</option>  
+					<option value="4th">4th</option>  
+					<option value="5th">5th</option>  
+					<option value="6th">6th</option>
+				</select><br><br>
+				<label><b>Course :</b></label>
+					<select name="course"> 
+						<option value="BCA">BCA</option>  
+						<option value="BBA">BBA</option>  
+						<option value="B.Tech">B.Tech</option>  
+						<option value="MBA">MBA</option>  
+						<option value="MCA">MCA</option>  
+						<option value="M.Tech">M.Tech</option>  
+					</select><br><br>
+				<label><b>Programming Language Known :</b></label>
+					<input type="checkbox" name="language" value="C">C
+					<input type="checkbox" name="language" value="C++">C++
+					<input type="checkbox" name="language" value="Java">Java
+					<input type="checkbox" name="language" value="Python">Python
+				<br><br>
+				<label><b>Hobbies :</b></label> 
+				<textarea cols="80" rows="5" placeholder="Your hobbies" name="hobby" required></textarea>
+				<br><br>
+    		<button type="submit" class="registerbtn">Submit</button> 
+    	</div>   
+	</form>  
+</body>  
+</html> 

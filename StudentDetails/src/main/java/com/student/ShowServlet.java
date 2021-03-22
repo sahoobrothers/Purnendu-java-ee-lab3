@@ -25,7 +25,12 @@ public class ShowServlet extends HttpServlet{
 				+ "<b>Gender:</b>"+gender[0]+"<br>\r\n"
 				+ "<b>Semester:</b>"+semester[0]+"<br>\r\n"
 				+ "<b>Course:</b>"+course[0]+"<br>\r\n"
-				+ "<b>Language:</b>"+lang[0]+"<br>"
+				+ "<b>Language:</b>");
+				for(int i=0;i<lang.length;i++) 
+					{
+						out.print(lang[i]+", ");
+					}
+				out.print("<br>"
 				+ "<b>Your hobbies are: </b>"+hobby+"<br><br>"
 				+ "</body>\r\n"
 				+ "</html>");
